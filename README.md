@@ -10,10 +10,16 @@ To write a program to implement Stochastic Gradient Descent (SGD) Regressor for 
 
 ## Algorithm
 
-1. SGD Regressor – Used gradient descent for linear prediction.
-2. Feature Scaling – Standardized features and target using StandardScaler.
-3. One-Hot Encoding – Converted categorical variables with get_dummies().
-4. Model Evaluation & Plot – Assessed with MSE, R², MAE and visualized predictions.
+1.Initialize Model – Set initial values for weights and bias.
+
+2.Pick One Sample – Select one data point randomly from the dataset.
+
+3.Calculate Error – Find the difference between actual and predicted value.
+
+4.Update Weights – Adjust weights using learning rate and gradient.
+
+5.Repeat Process – Continue for many iterations until the model improves.
+
 
 ## Program:
 ```
@@ -91,6 +97,30 @@ plt.show()
 ```
 
 ## Output:
+
+Name: Hari Prasath M
+
+Reg. No: 212225100015
+
+Mean Squared Error: 0.21276308592928508
+
+R-squared Score: 0.8288321752196486
+
+Mean Absolute Error: 0.31990409306576184
+
+Model Coefficients:
+
+Coefficients: [ 0.03644113  0.10467079  0.00530043  0.18101578  0.01731382  0.17996764
+  0.29746911 -0.01919133 -0.08772226 -0.00114337  0.10775046  0.03823239
+ -0.0408296  -0.05116344 -0.01946325  0.02245876  0.0179501  -0.01866822
+ -0.08844477 -0.01524452 -0.09405658 -0.02981943  0.06565885  0.21234125
+  0.0128534  -0.10127127  0.07171542 -0.01823596 -0.00200752  0.01139981
+ -0.03721764 -0.14683789 -0.07471277  0.00082891 -0.02786123  0.01139981
+ -0.00380599 -0.01722504  0.01946325 -0.01940024 -0.03397326 -0.04286795
+ -0.01691473]
+
+Intercept: [-0.0118457]
+
 
 ACTUAL VS PREDICTED PRICES USING SGD REGRESSOR
 <img width="565" height="453" alt="image" src="https://github.com/user-attachments/assets/f666e4fb-634b-4e2f-b2dd-0a2de06c8e1c" />
